@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+body{
+    background: linear-gradient(90deg, rgba(0, 51, 102, 1) 0%, rgba(37, 16, 74, 0.7) 100%);
+    line-height: 1.5;
+color: white;
+}
+.Todo-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+ 
+}
+.Todo-heading{
+    font-weight:800;
+    font-size: 40px;
+}
+.form{
+    display: flex;   
+     padding-top: 15px;
+     gap: 2px;
+}
+.Todo-input{
+    height: 32px;
+    text-align: center;
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    border: none;
+}
+.Todo-input:hover{
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+
+}
+.todo-btn {
+    height: 32.5px;
+    background-color: rgb(102, 102, 198);
+    border: none;
+    padding: 0 10px; 
+    color: white;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 14px; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.Hover:hover {
+    background-color: #FF9900;
+    box-shadow: 0 4px 8px rgba(123, 161, 48, 0.5);
+}
+.myUnordList ul {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.myUnordList li {
+    display: flex;
+}
+
+.taskDetails {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap; /* Allows wrapping */
+    overflow-wrap: break-word;
+    word-break: break-word; /* Updated to break words correctly */
+    list-style: none;
+    min-height: 32px; /* Set a minimum height for consistency */
+    width: 12rem;
+    border-radius: 20px; 
+    color: #FF9900;
+    padding-left: 15px;
+    padding-right: 15px; /* Add padding on the right for spacing */
+    background-color: white;
+    align-items: center; /* Center the content vertically */
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.5);
+
+}
+
+.checkBTn {
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+.delBTn {
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+.clear_all{
+margin-top: 12px;
+font-weight: 800;
+font-size: 12px;
+padding: 5px 20px 5px 20px;
+color: white;
+background-color: red;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+}
+.clear_all:hover{
+    background-color: #FF9900;
+    box-shadow: 0 4px 8px rgba(123, 161, 48, 0.5);
+}
+.checklist{
+    text-decoration: line-through;
+}
+.notChecklist{
+    text-decoration: none;
+}
